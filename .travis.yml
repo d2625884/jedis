@@ -18,7 +18,7 @@ install:
   - if [[ $JAVA_HOME = *java-6* ]]; then jdk_switcher use openjdk6; fi
   - mvn -version
   - mvn clean package install -DskipTests -Dgpg.skip
-  - make travis-install
+  #- make travis-install
 
 script:
   - make test
